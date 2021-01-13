@@ -191,10 +191,38 @@ body, html {
 .slider {
     // outline: 2px solid red;
     height: 50rem;
+    &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #363e49;
+    }
     &__item {
         background-image: url(../img/main/bg.png);
         // outline: 2px solid blue;
         height: 50rem;
+        // @include flexCenter;
+        
+    }
+    &__text {
+        // outline: 2px solid red;
+        margin: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 45%;
+        margin-top: 6rem;
+        margin-left: 7rem;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        color: #363e49;
+    }
+    &__desc {
+        font-size: 1.7rem;
+        color: #363e49;
     }
 }
 
