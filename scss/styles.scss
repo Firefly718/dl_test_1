@@ -492,3 +492,85 @@ body > div.products > div > div.products__list > div:nth-child(8) > div.product_
         margin-bottom: 3rem;
     }
 }
+
+.product {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+// ------------------------------------------ DISCOUNTS
+.discounts {
+    height: 63rem;
+    &__list {
+        display: flex;
+        border: 2px solid #585e66;
+    }
+    &__item {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // outline: 2px solid red;
+        padding: 1rem 1rem 3rem 1rem;
+        &:not(:last-of-type) {
+            border-right: 2px solid #585e66;
+        }
+    }
+}
+
+// imgs for discounts
+body > div.discounts > div > div.discounts__list > a:nth-child(1) > div.product__img {
+    background-image: url(../img/products/desc.png);
+}
+
+body > div.discounts > div > div.discounts__list > a:nth-child(2) > div.product__img {
+    background-image: url(../img/products/table.png);
+}
+body > div.discounts > div > div.discounts__list > a:nth-child(3) > div.product__img {
+    background-image: url(../img/products/wardrobe.png);
+}
+body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product__img {
+    background-image: url(../img/products/arcs.png);
+}
+
+// discount price
+body > div.discounts > div > div.discounts__list > a > div.product__value > div.product__price.product__price--discount {
+    &::before {
+        display: block;
+        content: '3500 грн';
+        font-size: 17px;
+        line-height: 4px;
+        text-decoration: line-through;
+        color: #585e66;
+        font-family: "Arial";
+        margin-bottom: 3rem;
+    }
+}
+
+body > div.discounts > div > div.discounts__list > a:nth-child(3) > div.product__value > div.product__price.product__price--discount {
+    &::before {
+        display: block;
+        content: '2900 грн';
+        font-size: 17px;
+        line-height: 4px;
+        text-decoration: line-through;
+        color: #585e66;
+        font-family: "Arial";
+        margin-bottom: 3rem;
+    }
+}
+
+body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product__value > div.product__price.product__price--discount {
+    &::before {
+        display: block;
+        content: '1500 грн';
+        font-size: 17px;
+        line-height: 4px;
+        text-decoration: line-through;
+        color: #585e66;
+        font-family: "Arial";
+        margin-bottom: 3rem;
+    }
+}
