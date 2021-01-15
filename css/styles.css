@@ -857,3 +857,61 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
   color: #585e66;
   font-family: "Arial";
   margin-bottom: 3rem; }
+
+.blog {
+  height: 54rem; }
+  .blog__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .blog__news {
+    width: 32%;
+    height: 42rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .blog__img {
+    width: 100%;
+    height: 19rem; }
+  .blog__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 20rem; }
+  .blog__title {
+    font-size: 1.5rem;
+    color: #363e49;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    height: 4rem; }
+  .blog__desc {
+    width: 100%;
+    height: 9rem;
+    font-size: 1.4rem;
+    color: #848484;
+    font-family: "Arial"; }
+  .blog__more {
+    display: block;
+    width: 100%;
+    color: #ff9700;
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer; }
