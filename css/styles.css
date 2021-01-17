@@ -315,7 +315,8 @@ template {
 
 html {
   height: 100%;
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   min-height: 100%;
@@ -458,7 +459,8 @@ body, html {
         height: 1rem;
         border: 1px solid gray; }
   .header__item {
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    color: #000; }
   .header__menu {
     height: 6.3rem;
     background-color: #363e49; }
@@ -1050,9 +1052,11 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
       -ms-flex-align: center;
       align-items: center; }
   .footer__left {
-    width: 70%; }
+    width: 70%;
+    padding-top: 3.5rem; }
   .footer__right {
     width: 30%;
+    padding-top: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1157,7 +1161,12 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     background-size: contain;
     background-position: center; }
   .footer__dev {
-    color: #777; }
+    color: #777;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in; }
     .footer__dev::after {
       content: '«Respect Design»';
       border-bottom: 1px solid #777; }
+    .footer__dev:hover {
+      color: #84ff00; }

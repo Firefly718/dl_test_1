@@ -10,6 +10,7 @@
 html {
     height: 100%;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -144,6 +145,7 @@ body, html {
     }
     &__item {
         margin: 0 1rem;
+        color: #000;
     }
     &__menu {
         height: 6.3rem;
@@ -793,12 +795,12 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     &__left {
         width: 70%;
         // outline: 2px solid red;
-        // padding: 3.5rem 0 0 4.5rem;
+        padding-top: 3.5rem;
     }
     &__right {
         width: 30%;
         // outline: 2px solid blue;
-        // padding: 2.5rem 12rem 0 0;
+        padding-top: 2.5rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -897,10 +899,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     }
     &__dev {
         color: #777;
+        transition: all .3s ease-in;
         &::after {
             content: '«Respect Design»';
             // text-decoration: underline;
             border-bottom: 1px solid #777;
+        }
+        &:hover {
+            color: #84ff00;
         }
     }
 }
