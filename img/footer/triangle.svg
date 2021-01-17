@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 31" width="39" height="31">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #84ff00 } 
+	</style>
+	<g id="Футер">
+		<path id="Фигура 4" class="shp0" d="M0 31L19 0L39 31L0 31Z" />
+	</g>
+</svg>
