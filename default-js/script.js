@@ -27,3 +27,17 @@ $(document).ready(function(){
     prevArrow: '<div class="arrow arrow__left"></div>'
   });
 });
+
+
+
+
+// burger catalog
+$(document).ready(function(){
+  $("#header > div > div.header__cat").css('display', 'flex');
+  $("#header > div > div.header__cat").hide();
+  $("#header > nav > div > div > div.header__catalog").click(function(){
+    console.log('click');
+    $("#header > div > div.header__cat").toggle('slow', 'swing');
+  });
+});
+
