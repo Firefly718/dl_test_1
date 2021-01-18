@@ -273,6 +273,30 @@ body, html {
             right: -1rem;
         }
     }
+    &__phones {
+        display: none;
+        // display: flex;
+        position: absolute;
+        top: 33%;
+        right: 17%;
+        // outline: 2px solid red;
+        background-color: #363e49;
+        padding: 1rem 2.5rem;
+        // color: #fff;
+        // height: 10rem;
+        z-index: 999;
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 10px 36px 10px #363e49;
+
+    }
+    &__mobile {
+        color: #fff;
+        margin: 1rem 0;
+        &:hover {
+            color: orange;
+        }
+    }
 }
 // -------------------------------------------------------- MAIN
 .main {
@@ -294,6 +318,7 @@ body, html {
         background-image: url(../img/main/bg.png);
         // outline: 2px solid blue;
         height: 50rem;
+        background-position: center;
         // @include flexCenter;
         
     }
@@ -1018,3 +1043,9 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
 #header > div > div.header__cat > a:nth-child(12) {
     background-image: url(../img/header/cat/12.png);
 }
+
+.bg-secondary {
+    // background-color:  #91959bcc;
+    box-shadow: 0px -100px 100px 800px #91959b inset;
+}
+

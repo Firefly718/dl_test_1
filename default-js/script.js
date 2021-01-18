@@ -36,8 +36,22 @@ $(document).ready(function(){
   $("#header > div > div.header__cat").css('display', 'flex');
   $("#header > div > div.header__cat").hide();
   $("#header > nav > div > div > div.header__catalog").click(function(){
-    console.log('click');
+    // console.log('click');
     $("#header > div > div.header__cat").toggle('slow', 'swing');
+
+    $('body').toggleClass('bg-secondary');
+    $('.slider__item').toggleClass('bg-secondary');
   });
 });
+
+// phones window
+$(document).ready(function(){
+  $("#header > nav > div > div > div.header__contact > div.header__phones").css('display', 'flex');
+  $("#header > nav > div > div > div.header__contact > div.header__phones").hide();
+  $("#header > nav > div > div > div.header__contact").click(function(){
+    // console.log('click');
+    $("#header > nav > div > div > div.header__contact > div.header__phones").toggle('slow', 'swing');
+  });
+});
+
 
