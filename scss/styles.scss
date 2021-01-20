@@ -125,10 +125,21 @@ body, html {
         display: flex;
         justify-content: space-between;
         z-index: 999;
-
+        @media screen and (max-width: 1000px) {
+            // flex-flow: row wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 700px) {
+            height: auto;
+        }
     }
     &__nav {
         @include flex;
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
     }
     &__options {
         @include flex;
@@ -149,10 +160,17 @@ body, html {
     &__item {
         margin: 0 1rem;
         color: #000;
+        @media screen and (max-width: 700px) {
+            font-size: 1.2rem;
+            margin: 1rem;
+        }
     }
     &__menu {
         height: 6.3rem;
         background-color: #363e49;
+        @media screen and (max-width: 650px) {
+            height: auto;
+        }
     }
     &__wrap {
         height: 6.3rem;
@@ -160,6 +178,20 @@ body, html {
         justify-content: space-around;
         align-items: center;
         // outline: 2px solid red;
+        position: relative;
+        @media screen and (max-width: 650px) {
+            flex-flow: row wrap;
+            // flex-direction: column;
+            height: auto;
+        }
+        @media screen and (max-width: 244px) {
+            justify-content: flex-start;
+        }
+        &--item {
+            @media screen and (max-width: 650px) {
+                margin: 1rem 2rem;
+            }
+        }
     }
     &__catalog {
         @include flexCenter;
@@ -175,6 +207,7 @@ body, html {
             background-size: contain;
             margin-right: 1rem;
             // outline: 2px solid red;
+            // position: relative;
         }
     }
     &__percent {
@@ -199,6 +232,15 @@ body, html {
         &::placeholder {
             color: #fff;
         }
+        @media screen and (max-width: 1000px) {
+            width: 30rem;
+        }
+        @media screen and (max-width: 700px) {
+            width: 15rem;
+        }
+        @media screen and (max-width: 368px) {
+            width: 80%;
+        }
     }
     &__search {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cdefs%3E%3Cimage width='125' height='125' id='img1' href='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4xLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDEyNC41IDEyNC41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjQuNSAxMjQuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9DQo8L3N0eWxlPg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTUxLDEwMi4xYzEwLjUsMCwyMC4yLTMuMiwyOC4zLTguNmwyOS4zLDI5LjNjMi4zLDIuMyw2LjEsMi4zLDguNSwwbDUuNy01LjdjMi4zLTIuMywyLjMtNi4xLDAtOC41TDkzLjQsNzkuMw0KCQljNS40LTguMSw4LjYtMTcuOCw4LjYtMjguM2MwLTI4LjEtMjIuOS01MS01MS01MVMwLDIyLjksMCw1MUMwLDc5LjEsMjIuOCwxMDIuMSw1MSwxMDIuMXogTTUxLDIwYzE3LjEsMCwzMSwxMy45LDMxLDMxDQoJCXMtMTMuOSwzMS0zMSwzMXMtMzEtMTMuOS0zMS0zMVMzMy45LDIwLDUxLDIweiIvPg0KPC9nPg0KPC9zdmc+DQo='/%3E%3C/defs%3E%3Cstyle%3E tspan %7B white-space:pre %7D %3C/style%3E%3Cg id='Шапка'%3E%3Cuse id='search' href='%23img1' transform='matrix(0.126,0,0,0.126,0,0)'/%3E%3C/g%3E%3C/svg%3E");
@@ -215,6 +257,9 @@ body, html {
         margin-left: -3rem;
         margin-bottom: -.5rem;
         cursor: pointer;
+        @media screen and (max-width: 650px) {
+            margin-left: -5rem;
+        }
     }
     &__contact {
         // outline: 2px dashed wheat;
@@ -277,8 +322,8 @@ body, html {
         display: none;
         // display: flex;
         position: absolute;
-        top: 33%;
-        right: 17%;
+        top: 90%;
+        right: 11%;
         // outline: 2px solid red;
         background-color: #363e49;
         padding: 1rem 2.5rem;
@@ -957,8 +1002,8 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
         padding: 4rem 4rem 0 4rem;
         // outline: 2px solid red;
         position: absolute;
-        top: 23%;
-        left: 10%;
+        top: 24%; // 37%
+        left: 10%; // 8%
         z-index: 998;
         border-bottom: 4px solid #363e49;
         // display: flex;
@@ -973,9 +1018,54 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
             background-color: #fff;
             // outline: 2px solid red;
             position: absolute;
-            top: -1.3%;
-            left: .5%;
+            top: -1.3%; //-1.3%
+            left: .5%; // .5%
             transform: rotate(45deg);
+            @media screen and (max-width: 1200px) {
+                top: -1%;
+            }
+            @media screen and (max-width: 1150px) {
+                left: .7%;
+            }
+            @media screen and (max-width: 924px) {
+                top: -.7%;
+                left: .8%;
+            }
+            @media screen and (max-width: 649px) {
+                top: -.35%;
+                left: 1%;
+            }
+            @media screen and (max-width: 500px) {
+                left: 1.2%;
+            }
+            @media screen and (max-width: 436px) {
+                left: 1.5%;
+            }
+        }
+        @media screen and (max-width: 1330px) { // main div cat
+            top: 45%;
+            left: 9.5%;
+        }
+        @media screen and (max-width: 700px) {
+            top: 92%;
+            left: 5%;
+        }
+        @media screen and (max-width: 614px) {
+            left: 9%;
+        }
+        @media screen and (max-width: 436px) {
+            left: 16%;
+            top: 90%;
+        }
+        @media screen and (max-width: 350px) {
+            top: 88%;
+            left: 13%;
+        }
+        @media screen and (max-width: 290px) {
+            top: 86%;
+        }
+        @media screen and (max-width: 244px) {
+            left: 10%;
         }
         &--item {
             font-size: 1.7rem;
@@ -1049,3 +1139,9 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     box-shadow: 0px -100px 100px 800px #91959b inset;
 }
 
+.logo {
+    @media screen and (max-width: 1000px) {
+        width: 70%;
+        // background-size: 100% 100%;
+    }
+}
