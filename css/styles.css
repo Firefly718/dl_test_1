@@ -652,7 +652,7 @@ body, html {
   .header__phones {
     display: none;
     position: absolute;
-    top: 90%;
+    top: 100%;
     right: 11%;
     background-color: #363e49;
     padding: 1rem 2.5rem;
@@ -664,6 +664,54 @@ body, html {
     border-radius: 0 0 10px 10px;
     -webkit-box-shadow: 0px 10px 36px 10px #363e49;
     box-shadow: 0px 10px 36px 10px #363e49; }
+    @media screen and (max-width: 1150px) {
+      .header__phones {
+        right: 9%; } }
+    @media screen and (max-width: 1050px) {
+      .header__phones {
+        right: 7.5%; } }
+    @media screen and (max-width: 1000px) {
+      .header__phones {
+        right: 13%; } }
+    @media screen and (max-width: 930px) {
+      .header__phones {
+        right: 11%; } }
+    @media screen and (max-width: 830px) {
+      .header__phones {
+        right: 9%; } }
+    @media screen and (max-width: 730px) {
+      .header__phones {
+        right: 6%; } }
+    @media screen and (max-width: 700px) {
+      .header__phones {
+        right: 12%; } }
+    @media screen and (max-width: 650px) {
+      .header__phones {
+        right: 0%; } }
+    @media screen and (max-width: 614px) {
+      .header__phones {
+        right: 58%; } }
+    @media screen and (max-width: 550px) {
+      .header__phones {
+        right: 55%; } }
+    @media screen and (max-width: 450px) {
+      .header__phones {
+        right: 50%; } }
+    @media screen and (max-width: 436px) {
+      .header__phones {
+        right: 5%; } }
+    @media screen and (max-width: 368px) {
+      .header__phones {
+        right: 45%; } }
+    @media screen and (max-width: 300px) {
+      .header__phones {
+        right: 38%; } }
+    @media screen and (max-width: 250px) {
+      .header__phones {
+        right: 20%; } }
+    @media screen and (max-width: 244px) {
+      .header__phones {
+        right: 35%; } }
   .header__mobile {
     color: #fff;
     margin: 1rem 0; }
@@ -690,13 +738,51 @@ body, html {
     width: 45%;
     margin-top: 6rem;
     margin-left: 7rem; }
+    @media screen and (max-width: 1090px) {
+      .slider__text {
+        width: 40%;
+        margin-top: 3rem; } }
+    @media screen and (max-width: 800px) {
+      .slider__text {
+        margin-left: 4rem; } }
+    @media screen and (max-width: 500px) {
+      .slider__text {
+        margin: 1rem;
+        width: 60%; } }
+    @media screen and (max-width: 300px) {
+      .slider__text {
+        width: 80%; } }
   .slider__title {
     text-transform: uppercase;
     font-size: 4.5rem;
     color: #363e49; }
+    @media screen and (max-width: 1090px) {
+      .slider__title {
+        font-size: 4rem; } }
+    @media screen and (max-width: 970px) {
+      .slider__title {
+        font-size: 3rem; } }
+    @media screen and (max-width: 800px) {
+      .slider__title {
+        font-size: 2rem; } }
+    @media screen and (max-width: 500px) {
+      .slider__title {
+        font-size: 1.7rem; } }
+    @media screen and (max-width: 450px) {
+      .slider__title {
+        font-size: 1.5rem; } }
   .slider__desc {
     font-size: 1.7rem;
     color: #363e49; }
+    @media screen and (max-width: 1090px) {
+      .slider__desc {
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 600px) {
+      .slider__desc {
+        font-size: 1.4rem; } }
+    @media screen and (max-width: 550px) {
+      .slider__desc {
+        font-size: 1.3rem; } }
 
 .arrow {
   width: 2rem;
@@ -746,6 +832,69 @@ body > div.main > div > div > ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 1140px) {
+    body > div.main > div > div > ul {
+      margin-left: 1%; } }
+  @media screen and (max-width: 1060px) {
+    body > div.main > div > div > ul {
+      margin-left: 2%; } }
+  @media screen and (max-width: 990px) {
+    body > div.main > div > div > ul {
+      margin-left: 3%; } }
+  @media screen and (max-width: 930px) {
+    body > div.main > div > div > ul {
+      margin-left: 4%; } }
+  @media screen and (max-width: 870px) {
+    body > div.main > div > div > ul {
+      margin-left: 5%; } }
+  @media screen and (max-width: 830px) {
+    body > div.main > div > div > ul {
+      margin-left: 6%; } }
+  @media screen and (max-width: 800px) {
+    body > div.main > div > div > ul {
+      margin-left: 3%; } }
+  @media screen and (max-width: 740px) {
+    body > div.main > div > div > ul {
+      margin-left: 4%; } }
+  @media screen and (max-width: 680px) {
+    body > div.main > div > div > ul {
+      margin-left: 5%; } }
+  @media screen and (max-width: 640px) {
+    body > div.main > div > div > ul {
+      margin-left: 6%; } }
+  @media screen and (max-width: 610px) {
+    body > div.main > div > div > ul {
+      margin-left: 7%; } }
+  @media screen and (max-width: 580px) {
+    body > div.main > div > div > ul {
+      margin-left: 8%; } }
+  @media screen and (max-width: 550px) {
+    body > div.main > div > div > ul {
+      margin-left: 10%; } }
+  @media screen and (max-width: 500px) {
+    body > div.main > div > div > ul {
+      margin-left: 4%; } }
+  @media screen and (max-width: 480px) {
+    body > div.main > div > div > ul {
+      margin-left: 7%; } }
+  @media screen and (max-width: 440px) {
+    body > div.main > div > div > ul {
+      margin-left: 9%; } }
+  @media screen and (max-width: 400px) {
+    body > div.main > div > div > ul {
+      margin-left: 11%; } }
+  @media screen and (max-width: 350px) {
+    body > div.main > div > div > ul {
+      margin-left: 13%; } }
+  @media screen and (max-width: 320px) {
+    body > div.main > div > div > ul {
+      margin-left: 15%; } }
+  @media screen and (max-width: 300px) {
+    body > div.main > div > div > ul {
+      margin-left: 18%; } }
+  @media screen and (max-width: 270px) {
+    body > div.main > div > div > ul {
+      margin-left: 22%; } }
 
 #slick-slide-control00,
 #slick-slide-control01,

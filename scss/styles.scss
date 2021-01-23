@@ -120,6 +120,7 @@ body, html {
     width: 100%;
     border-top: 4px solid #c68e4a;
     z-index: 999;
+    // height: 20rem;
     &__preheader {
         // outline: 1px solid red;
         display: flex;
@@ -197,6 +198,7 @@ body, html {
         @include flexCenter;
         color: #fff;
         cursor: pointer;
+        // position: relative;
         &::before {
             content: '';
             display: block;
@@ -322,7 +324,7 @@ body, html {
         display: none;
         // display: flex;
         position: absolute;
-        top: 90%;
+        top: 100%; //95%
         right: 11%;
         // outline: 2px solid red;
         background-color: #363e49;
@@ -333,7 +335,57 @@ body, html {
         flex-direction: column;
         border-radius: 0 0 10px 10px;
         box-shadow: 0px 10px 36px 10px #363e49;
-
+        @media screen and (max-width: 1150px) {
+            right: 9%;
+        }
+        @media screen and (max-width: 1050px) {
+            right: 7.5%;
+        }
+        @media screen and (max-width: 1000px) {
+            right: 13%;
+        }
+        @media screen and (max-width: 930px) {
+            right: 11%;
+        }
+        @media screen and (max-width: 830px) {
+            right: 9%;
+        }
+        @media screen and (max-width: 730px) {
+            right: 6%;
+        }
+        @media screen and (max-width: 700px) {
+            right: 12%;
+        }
+        @media screen and (max-width: 650px) {
+            right: 0%;
+        }
+        @media screen and (max-width: 614px) {
+            right: 58%;
+            // left: 0;
+        }
+        @media screen and (max-width: 550px) {
+            right: 55%;
+        }
+        @media screen and (max-width: 450px) {
+            right: 50%;
+        }
+        @media screen and (max-width: 436px) {
+            right: 5%;
+            // top: 95%;
+        }
+        @media screen and (max-width: 368px) {
+            right: 45%;
+        }
+        @media screen and (max-width: 300px) {
+            right: 38%;
+        }
+        @media screen and (max-width: 250px) {
+            right: 20%;
+            // top: 100%;
+        }
+        @media screen and (max-width: 244px) {
+            right: 35%;
+        }
     }
     &__mobile {
         color: #fff;
@@ -376,15 +428,54 @@ body, html {
         width: 45%;
         margin-top: 6rem;
         margin-left: 7rem;
+        @media screen and (max-width: 1090px) {
+            width: 40%;
+            margin-top: 3rem;
+        }
+        @media screen and (max-width: 800px) {
+            margin-left: 4rem;
+            // margin-bottom: 3rem;
+        }
+        @media screen and (max-width: 500px) {
+            margin: 1rem;
+            width: 60%;
+        }
+        @media screen and (max-width: 300px) {
+            width: 80%;
+        }
     }
     &__title {
         text-transform: uppercase;
         font-size: 4.5rem;
         color: #363e49;
+        @media screen and (max-width: 1090px) {
+            font-size: 4rem;
+        }
+        @media screen and (max-width: 970px) {
+            font-size: 3rem;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 1.7rem;
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 1.5rem;
+        }
     }
     &__desc {
         font-size: 1.7rem;
         color: #363e49;
+        @media screen and (max-width: 1090px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -426,6 +517,70 @@ body > div.main > div > div > ul {
     left: 5%;
     width: 15%;
     @include flexCenter;
+    @media screen and (max-width: 1140px) {
+        // left: 6%;
+        margin-left: 1%;
+    }
+    @media screen and (max-width: 1060px) {
+        margin-left: 2%;
+    }
+    @media screen and (max-width: 990px) {
+        margin-left: 3%;
+    }
+    @media screen and (max-width: 930px) {
+        margin-left: 4%;
+    }
+    @media screen and (max-width: 870px) {
+        margin-left: 5%;
+    }
+    @media screen and (max-width: 830px) {
+        margin-left: 6%;
+    }
+    @media screen and (max-width: 800px) {
+        margin-left: 3%;
+    }
+    @media screen and (max-width: 740px) {
+        margin-left: 4%;
+    }
+    @media screen and (max-width: 680px) {
+        margin-left: 5%;
+    }
+    @media screen and (max-width: 640px) {
+        margin-left: 6%;
+    }
+    @media screen and (max-width: 610px) {
+        margin-left: 7%;
+    }
+    @media screen and (max-width: 580px) {
+        margin-left: 8%;
+    }
+    @media screen and (max-width: 550px) {
+        margin-left: 10%;
+    }
+    @media screen and (max-width: 500px) {
+        margin-left: 4%;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: 7%;
+    }
+    @media screen and (max-width: 440px) {
+        margin-left: 9%;
+    }
+    @media screen and (max-width: 400px) {
+        margin-left: 11%;
+    }
+    @media screen and (max-width: 350px) {
+        margin-left: 13%;
+    }
+    @media screen and (max-width: 320px) {
+        margin-left: 15%;
+    }
+    @media screen and (max-width: 300px) {
+        margin-left: 18%;
+    }
+    @media screen and (max-width: 270px) {
+        margin-left: 22%;
+    }
 }
 
 #slick-slide-control00, 
@@ -997,12 +1152,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
         height: auto;
         background-color: #fff;
         justify-content: space-between;
-        // align-items: space-between;
         flex-flow: row wrap;
         padding: 4rem 4rem 0 4rem;
         // outline: 2px solid red;
         position: absolute;
+        // top: 0;
         top: 24%; // 37%
+        // top: 124px;
+        // bottom: 0;
         left: 10%; // 8%
         z-index: 998;
         border-bottom: 4px solid #363e49;

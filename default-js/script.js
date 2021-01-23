@@ -35,6 +35,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#header > div > div.header__cat").css('display', 'flex');
   $("#header > div > div.header__cat").hide();
+
   $("#header > nav > div > div > div.header__catalog").click(function(){
     // console.log('click');
     $("#header > div > div.header__cat").toggle('slow', 'swing');
@@ -53,5 +54,3 @@ $(document).ready(function(){
     $("#header > nav > div > div > div.header__contact > div.header__phones").toggle('slow', 'swing');
   });
 });
-
-
