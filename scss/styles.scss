@@ -874,10 +874,23 @@ body > div.products > div > div.products__list > div:nth-child(8) > div.product_
 // ------------------------------------------ DISCOUNTS
 .discounts {
     height: 63rem;
+    @media screen and (max-width: 1000px) {
+        height: 120rem;
+    }
+    @media screen and (max-width: 700px) {
+        height: 200rem;
+    }
     &__list {
         display: flex;
         border: 2px solid #585e66;
         margin: 0 8rem;
+        @media screen and (max-width: 1000px) {
+            flex-flow: row wrap;
+            border: 1px solid #585e66;
+        }
+        @media screen and (max-width: 700px) {
+            margin: 0 1rem;
+        }
     }
     &__item {
         width: 25%;
@@ -888,6 +901,57 @@ body > div.products > div > div.products__list > div:nth-child(8) > div.product_
         padding: 1rem 1rem 3rem 1rem;
         &:not(:last-of-type) {
             border-right: 2px solid #585e66;
+            @media screen and (max-width: 1000px) {
+                border: none;
+            }
+        }
+        &:nth-child(1) {
+            @media screen and (max-width: 1000px) {
+                order: 1;
+                flex: 1 1 50%;
+                border-right: 1px solid #585e66;
+                border-bottom: 1px solid #585e66;
+            }
+            @media screen and (max-width: 700px) {
+                order: 1;
+                flex: 1 1 100%;
+                border-right: none;
+            }
+        }
+        &:nth-child(2) {
+            @media screen and (max-width: 1000px) {
+                order: 2;
+                flex: 1 1 50%;
+                border-bottom: 1px solid #585e66;
+            }
+            @media screen and (max-width: 700px) {
+                order: 2;
+                flex: 1 1 100%;
+                // border: none;
+            }
+        }
+        &:nth-child(3) {
+            @media screen and (max-width: 1000px) {
+                order: 3;
+                flex: 1 1 50%;
+                border-right: 1px solid #585e66;
+            }
+            @media screen and (max-width: 700px) {
+                order: 3;
+                flex: 1 1 100%;
+                border-right: none;
+                border-bottom: 1px solid #585e66;
+            }
+        }
+        &:nth-child(4) {
+            @media screen and (max-width: 1000px) {
+                order: 4;
+                flex: 1 1 50%;
+            }
+            @media screen and (max-width: 700px) {
+                order: 4;
+                flex: 1 1 100%;
+            }
         }
     }
 }
