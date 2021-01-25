@@ -1466,24 +1466,75 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
   background-image: url(../img/about/ind-cut.png);
   background-repeat: no-repeat;
   background-position: 120%; }
+  @media screen and (max-width: 1170px) {
+    .about__wrap {
+      background-position: 135%;
+      height: auto; } }
+  @media screen and (max-width: 1160px) {
+    .about__wrap {
+      background-position: 155%; } }
+  @media screen and (max-width: 1140px) {
+    .about__wrap {
+      background-position: 175%; } }
+  @media screen and (max-width: 950px) {
+    .about__wrap {
+      background-position: 230%; } }
+  @media screen and (max-width: 900px) {
+    .about__wrap {
+      background-position: 30rem; } }
+  @media screen and (max-width: 800px) {
+    .about__wrap {
+      background-size: cover; } }
+  @media screen and (max-width: 600px) {
+    .about__wrap {
+      background-position: 25rem; } }
+  @media screen and (max-width: 500px) {
+    .about__wrap {
+      background-position: 20rem; } }
+  @media screen and (max-width: 450px) {
+    .about__wrap {
+      background-image: none; } }
 
 .about__text {
   width: 45%;
   padding: 3rem 0 3rem 5rem; }
+  @media screen and (max-width: 1000px) {
+    .about__text {
+      padding: 1rem 0 1rem 2rem;
+      width: 35%; } }
+  @media screen and (max-width: 800px) {
+    .about__text {
+      width: 50%; } }
+  @media screen and (max-width: 450px) {
+    .about__text {
+      width: 100%;
+      padding: 1rem; } }
 
 .about__title {
   font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 2rem; }
+  @media screen and (max-width: 550px) {
+    .about__title {
+      font-size: 1.8rem; } }
+  @media screen and (max-width: 350px) {
+    .about__title {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 270px) {
+    .about__title {
+      font-size: 1.4rem; } }
 
 .about__desc {
   font-size: 1.3rem;
   line-height: 2.2rem;
   margin-bottom: 3.5rem; }
+  @media screen and (max-width: 350px) {
+    .about__desc {
+      font-size: 1.2rem; } }
 
 .about__button {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
   color: #000;
   border: 1px solid #000;
   text-transform: uppercase;
@@ -1491,6 +1542,11 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
   display: block;
   width: 14rem;
   margin: 0 auto; }
+  @media screen and (max-width: 350px) {
+    .about__button {
+      font-size: 1.4rem;
+      padding: 1rem 1.5rem;
+      text-align: center; } }
 
 .benefits {
   height: 30rem;
