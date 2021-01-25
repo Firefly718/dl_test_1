@@ -1226,20 +1226,75 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
 .benefits {
     height: 30rem;
     margin-bottom: 5rem;
+    @media screen and (max-width: 700px) {
+        height: auto;
+    }
     &__wrap {
         display: flex;
         justify-content: space-evenly;
         margin: 0 8rem;
+        @media screen and (max-width: 850px) {
+            margin: 0 2rem;
+        }
+        @media screen and (max-width: 720px) {
+            margin: 0 1rem;
+        }
+        @media screen and (max-width: 700px) {
+            flex-flow: row wrap;
+        }
     }
     &__item {
         // outline: 2px solid red;
         width: 20%;
+        @media screen and (max-width: 700px) {
+            margin-bottom: 8rem;
+            &:nth-child(1) {
+                order: 1;
+                flex-basis: 35%;
+            }
+            &:nth-child(2) {
+                order: 2;
+                flex-basis: 35%;
+            }
+            &:nth-child(3) {
+                order: 3;
+                flex-basis: 35%;
+            }
+            &:nth-child(4) {
+                order: 4;
+                flex-basis: 35%;
+            }
+        }
+        @media screen and (max-width: 410px) {
+            &:nth-child(1) {
+                order: 1;
+                flex-basis: 100%;
+            }
+            &:nth-child(2) {
+                order: 2;
+                flex-basis: 100%;
+            }
+            &:nth-child(3) {
+                order: 3;
+                flex-basis: 100%;
+            }
+            &:nth-child(4) {
+                order: 4;
+                flex-basis: 100%;
+            }
+        }
     }
     &__title {
         font-size: 1.6rem;
         line-height: 2.2rem;
         text-align: center;
         text-transform: uppercase;
+        @media screen and (max-width: 1060px) {
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: 950px) {
+            font-size: 1.2rem;
+        }
         &::after {
             display: block;
             content: '';
@@ -1263,6 +1318,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
                 // outline: 2px solid red;
                 margin: 0 auto;
                 margin-bottom: 5rem;
+                @media screen and (max-width: 950px) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 6rem;
+                    height: 6rem;
+                }
             }
         }
         &--history {
@@ -1279,6 +1342,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
                 // outline: 2px solid red;
                 margin: 0 auto;
                 margin-bottom: 5rem;
+                @media screen and (max-width: 950px) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 6rem;
+                    height: 6rem;
+                }
             }
         }
         &--like {
@@ -1295,6 +1366,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
                 background-position: center;
                 margin: 0 auto;
                 margin-bottom: 5rem;
+                @media screen and (max-width: 950px) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 6rem;
+                    height: 6rem;
+                }
             }
         }
         &--sale {
@@ -1311,6 +1390,14 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
                 background-position: center;
                 margin: 0 auto;
                 margin-bottom: 5rem;
+                @media screen and (max-width: 950px) {
+                    width: 8rem;
+                    height: 8rem;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 6rem;
+                    height: 6rem;
+                }
             }
         }
     }
@@ -1319,6 +1406,9 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
         line-height: 2.2rem;
         text-align: center;
         margin-top: 2.4rem;
+        @media screen and (max-width: 950px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
