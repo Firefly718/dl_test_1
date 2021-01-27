@@ -1056,33 +1056,13 @@ body > div.main > div > div > ul {
     body > div.main > div > div > ul {
       margin-left: 22%; } }
 
-#slick-slide-control00,
-#slick-slide-control01,
-#slick-slide-control02,
-#slick-slide-control03,
-#slick-slide-control04 {
+.slick-dots li button:before {
   border-radius: 50%;
-  border: 3px solid #6bae67; }
-  #slick-slide-control00:hover::before, #slick-slide-control00:focus::before, #slick-slide-control00:active::before,
-  #slick-slide-control01:hover::before,
-  #slick-slide-control01:focus::before,
-  #slick-slide-control01:active::before,
-  #slick-slide-control02:hover::before,
-  #slick-slide-control02:focus::before,
-  #slick-slide-control02:active::before,
-  #slick-slide-control03:hover::before,
-  #slick-slide-control03:focus::before,
-  #slick-slide-control03:active::before,
-  #slick-slide-control04:hover::before,
-  #slick-slide-control04:focus::before,
-  #slick-slide-control04:active::before {
-    color: #6bae67; }
-  #slick-slide-control00::before,
-  #slick-slide-control01::before,
-  #slick-slide-control02::before,
-  #slick-slide-control03::before,
-  #slick-slide-control04::before {
-    color: #6bae67; }
+  border: 3px solid #6bae67;
+  color: transparent; }
+
+.slick-dots li.slick-active button:before {
+  color: #6bae67; }
 
 .products {
   height: auto;

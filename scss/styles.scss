@@ -723,23 +723,36 @@ body > div.main > div > div > ul {
     }
 }
 
-#slick-slide-control00, 
-#slick-slide-control01, 
-#slick-slide-control02, 
-#slick-slide-control03, 
-#slick-slide-control04 {
+// #slick-slide-control00, 
+// #slick-slide-control01, 
+// #slick-slide-control02, 
+// #slick-slide-control03, 
+// #slick-slide-control04 {
+//     border-radius: 50%;
+//     border: 3px solid #6bae67;
+//     &:hover::before,
+//     &:focus::before,
+//     &:active::before {
+//         color: #6bae67;
+//     }
+//     &::before {
+//         // color: transparent;
+//         color: #6bae67;
+//     }
+// }
+
+.slick-dots li button:before {
     border-radius: 50%;
     border: 3px solid #6bae67;
-    &:hover::before,
-    &:focus::before,
-    &:active::before {
-        color: #6bae67;
-    }
-    &::before {
-        // color: transparent;
-        color: #6bae67;
-    }
+    color: transparent;
 }
+
+.slick-dots li.slick-active button:before {
+    color: #6bae67;
+}
+
+
+
 // -------------------------------------------- PRODUCTS
 .products {
     height: auto;
