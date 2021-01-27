@@ -2052,7 +2052,7 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
   @media screen and (max-width: 436px) {
     .header__cat {
       left: 16%;
-      top: 61%; } }
+      top: 90%; } }
   @media screen and (max-width: 350px) {
     .header__cat {
       top: 88%;
@@ -2080,40 +2080,40 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     background-repeat: no-repeat;
     background-position: center; }
 
-#header > div > div.header__cat > a:nth-child(1) {
+#header > div > div > div.header__cat > a:nth-child(1) {
   background-image: url(../img/header/cat/1.png); }
 
-#header > div > div.header__cat > a:nth-child(2) {
+#header > div > div > div.header__cat > a:nth-child(2) {
   background-image: url(../img/header/cat/2.png); }
 
-#header > div > div.header__cat > a:nth-child(3) {
+#header > div > div > div.header__cat > a:nth-child(3) {
   background-image: url(../img/header/cat/3.png); }
 
-#header > div > div.header__cat > a:nth-child(4) {
+#header > div > div > div.header__cat > a:nth-child(4) {
   background-image: url(../img/header/cat/4.png); }
 
-#header > div > div.header__cat > a:nth-child(5) {
+#header > div > div > div.header__cat > a:nth-child(5) {
   background-image: url(../img/header/cat/5.png); }
 
-#header > div > div.header__cat > a:nth-child(6) {
+#header > div > div > div.header__cat > a:nth-child(6) {
   background-image: url(../img/header/cat/6.png); }
 
-#header > div > div.header__cat > a:nth-child(7) {
+#header > div > div > div.header__cat > a:nth-child(7) {
   background-image: url(../img/header/cat/7.png); }
 
-#header > div > div.header__cat > a:nth-child(8) {
+#header > div > div > div.header__cat > a:nth-child(8) {
   background-image: url(../img/header/cat/8.png); }
 
-#header > div > div.header__cat > a:nth-child(9) {
+#header > div > div > div.header__cat > a:nth-child(9) {
   background-image: url(../img/header/cat/9.png); }
 
-#header > div > div.header__cat > a:nth-child(10) {
+#header > div > div > div.header__cat > a:nth-child(10) {
   background-image: url(../img/header/cat/10.png); }
 
-#header > div > div.header__cat > a:nth-child(11) {
+#header > div > div > div.header__cat > a:nth-child(11) {
   background-image: url(../img/header/cat/11.png); }
 
-#header > div > div.header__cat > a:nth-child(12) {
+#header > div > div > div.header__cat > a:nth-child(12) {
   background-image: url(../img/header/cat/12.png); }
 
 .bg-secondary {
