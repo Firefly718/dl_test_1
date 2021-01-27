@@ -561,6 +561,11 @@ body, html {
   width: 100%;
   border-top: 4px solid #c68e4a;
   z-index: 999; }
+  .header__wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    outline: 2px solid red; }
   .header__preheader {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1058,13 +1063,17 @@ body > div.main > div > div > ul {
 #slick-slide-control04 {
   border-radius: 50%;
   border: 3px solid #6bae67; }
-  #slick-slide-control00:focus::before, #slick-slide-control00:active::before,
+  #slick-slide-control00:hover::before, #slick-slide-control00:focus::before, #slick-slide-control00:active::before,
+  #slick-slide-control01:hover::before,
   #slick-slide-control01:focus::before,
   #slick-slide-control01:active::before,
+  #slick-slide-control02:hover::before,
   #slick-slide-control02:focus::before,
   #slick-slide-control02:active::before,
+  #slick-slide-control03:hover::before,
   #slick-slide-control03:focus::before,
   #slick-slide-control03:active::before,
+  #slick-slide-control04:hover::before,
   #slick-slide-control04:focus::before,
   #slick-slide-control04:active::before {
     color: #6bae67; }
@@ -1073,7 +1082,7 @@ body > div.main > div > div > ul {
   #slick-slide-control02::before,
   #slick-slide-control03::before,
   #slick-slide-control04::before {
-    color: transparent; }
+    color: #6bae67; }
 
 .products {
   height: auto;
@@ -2006,6 +2015,9 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
+    @media screen and (max-width: 1330px) {
+      .header__cat::before {
+        top: -1%; } }
     @media screen and (max-width: 1200px) {
       .header__cat::before {
         top: -1%; } }
@@ -2040,7 +2052,7 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
   @media screen and (max-width: 436px) {
     .header__cat {
       left: 16%;
-      top: 90%; } }
+      top: 61%; } }
   @media screen and (max-width: 350px) {
     .header__cat {
       top: 88%;
