@@ -1981,139 +1981,167 @@ body > div.discounts > div > div.discounts__list > a:nth-child(4) > div.product_
       font-size: 1.5rem;
       text-align: center; } }
 
-.header__cat {
-  width: 80%;
-  height: auto;
-  background-color: #fff;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  padding: 4rem 4rem 0 4rem;
-  position: absolute;
-  top: 24%;
-  left: 10%;
-  z-index: 998;
-  border-bottom: 4px solid #363e49;
-  display: none;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in; }
-  .header__cat::before {
-    content: '';
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
+.header {
+  position: relative; }
+  .header__cat {
+    width: 80%;
+    height: auto;
     background-color: #fff;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 4rem 4rem 0 4rem;
     position: absolute;
-    top: -1.3%;
-    left: .5%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    top: 100%;
+    left: 10%;
+    z-index: 998;
+    border-bottom: 4px solid #363e49;
+    display: none;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in; }
+    .header__cat::before {
+      content: '';
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: #fff;
+      position: absolute;
+      top: -1.3%;
+      left: .5%;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+      @media screen and (max-width: 1199px) {
+        .header__cat::before {
+          top: -1%; } }
+      @media screen and (max-width: 1100px) {
+        .header__cat::before {
+          left: .6%; } }
+      @media screen and (max-width: 924px) {
+        .header__cat::before {
+          top: -.7%;
+          left: .7%; } }
+      @media screen and (max-width: 725px) {
+        .header__cat::before {
+          left: .9%; } }
+      @media screen and (max-width: 649px) {
+        .header__cat::before {
+          top: -.35%;
+          left: 1%; } }
+      @media screen and (max-width: 550px) {
+        .header__cat::before {
+          left: 1.1%; } }
+      @media screen and (max-width: 480px) {
+        .header__cat::before {
+          left: 1.5%; } }
+      @media screen and (max-width: 370px) {
+        .header__cat::before {
+          left: 1.7%; } }
+      @media screen and (max-width: 315px) {
+        .header__cat::before {
+          left: 2%; } }
+      @media screen and (max-width: 300px) {
+        .header__cat::before {
+          top: -.55%; } }
+      @media screen and (max-width: 280px) {
+        .header__cat::before {
+          left: 2.5%; } }
     @media screen and (max-width: 1330px) {
-      .header__cat::before {
-        top: -1%; } }
-    @media screen and (max-width: 1200px) {
-      .header__cat::before {
-        top: -1%; } }
-    @media screen and (max-width: 1150px) {
-      .header__cat::before {
-        left: .7%; } }
-    @media screen and (max-width: 924px) {
-      .header__cat::before {
-        top: -.7%;
-        left: .8%; } }
+      .header__cat {
+        left: 10%; } }
+    @media screen and (max-width: 650px) {
+      .header__cat {
+        top: 89%; } }
     @media screen and (max-width: 649px) {
-      .header__cat::before {
-        top: -.35%;
-        left: 1%; } }
-    @media screen and (max-width: 500px) {
-      .header__cat::before {
-        left: 1.2%; } }
+      .header__cat {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
+    @media screen and (max-width: 614px) {
+      .header__cat {
+        top: 86%; } }
     @media screen and (max-width: 436px) {
-      .header__cat::before {
-        left: 1.5%; } }
-  @media screen and (max-width: 1330px) {
-    .header__cat {
-      top: 45%;
-      left: 9.5%; } }
-  @media screen and (max-width: 700px) {
-    .header__cat {
-      top: 92%;
-      left: 5%; } }
-  @media screen and (max-width: 614px) {
-    .header__cat {
-      left: 9%; } }
-  @media screen and (max-width: 436px) {
-    .header__cat {
-      left: 16%;
-      top: 90%; } }
-  @media screen and (max-width: 350px) {
-    .header__cat {
-      top: 88%;
-      left: 13%; } }
-  @media screen and (max-width: 290px) {
-    .header__cat {
-      top: 86%; } }
-  @media screen and (max-width: 244px) {
-    .header__cat {
-      left: 10%; } }
-  .header__cat--item {
-    font-size: 1.7rem;
-    color: #363e49;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 22rem;
-    height: 26rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    text-align: center;
-    margin-bottom: 4rem;
-    background-repeat: no-repeat;
-    background-position: center; }
+      .header__cat {
+        top: 76%;
+        left: 17%; } }
+    @media screen and (max-width: 250px) {
+      .header__cat {
+        top: 65%;
+        left: 10%; } }
+    @media screen and (max-width: 244px) {
+      .header__cat {
+        top: 60%; } }
+    .header__cat--item {
+      font-size: 1.7rem;
+      color: #363e49;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 22rem;
+      height: 26rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-bottom: 4rem;
+      background-repeat: no-repeat;
+      background-position: center; }
 
-#header > div > div > div.header__cat > a:nth-child(1) {
+@media screen and (max-width: 350px) {
+  #header > div.header__cat > a {
+    font-size: 1.3rem; } }
+
+@media screen and (max-width: 315px) {
+  #header > div.header__cat > a {
+    background-size: cover; } }
+
+@media screen and (max-width: 300px) {
+  #header > div.header__cat > a {
+    background-size: contain;
+    height: 15rem;
+    background-position-y: -2rem; } }
+
+#header > div.header__cat > a:nth-child(1) {
   background-image: url(../img/header/cat/1.png); }
 
-#header > div > div > div.header__cat > a:nth-child(2) {
+#header > div.header__cat > a:nth-child(2) {
   background-image: url(../img/header/cat/2.png); }
 
-#header > div > div > div.header__cat > a:nth-child(3) {
+#header > div.header__cat > a:nth-child(3) {
   background-image: url(../img/header/cat/3.png); }
 
-#header > div > div > div.header__cat > a:nth-child(4) {
+#header > div.header__cat > a:nth-child(4) {
   background-image: url(../img/header/cat/4.png); }
 
-#header > div > div > div.header__cat > a:nth-child(5) {
+#header > div.header__cat > a:nth-child(5) {
   background-image: url(../img/header/cat/5.png); }
 
-#header > div > div > div.header__cat > a:nth-child(6) {
+#header > div.header__cat > a:nth-child(6) {
   background-image: url(../img/header/cat/6.png); }
 
-#header > div > div > div.header__cat > a:nth-child(7) {
+#header > div.header__cat > a:nth-child(7) {
   background-image: url(../img/header/cat/7.png); }
 
-#header > div > div > div.header__cat > a:nth-child(8) {
+#header > div.header__cat > a:nth-child(8) {
   background-image: url(../img/header/cat/8.png); }
 
-#header > div > div > div.header__cat > a:nth-child(9) {
+#header > div.header__cat > a:nth-child(9) {
   background-image: url(../img/header/cat/9.png); }
 
-#header > div > div > div.header__cat > a:nth-child(10) {
+#header > div.header__cat > a:nth-child(10) {
   background-image: url(../img/header/cat/10.png); }
 
-#header > div > div > div.header__cat > a:nth-child(11) {
+#header > div.header__cat > a:nth-child(11) {
   background-image: url(../img/header/cat/11.png); }
 
-#header > div > div > div.header__cat > a:nth-child(12) {
+#header > div.header__cat > a:nth-child(12) {
   background-image: url(../img/header/cat/12.png); }
 
 .bg-secondary {

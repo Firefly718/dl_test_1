@@ -33,12 +33,12 @@ $(document).ready(function(){
 
 // burger catalog
 $(document).ready(function(){
-  $("#header > div > div > div.header__cat").css('display', 'flex');
-  $("#header > div > div > div.header__cat").hide();
+  $("#header > div.header__cat").css('display', 'flex');
+  $("#header > div.header__cat").hide();
 
   $("#header > nav > div > div > div.header__catalog").click(function(){
     // console.log('click');
-    $("#header > div > div > div.header__cat").toggle('slow', 'swing');
+    $("#header > div.header__cat").toggle('slow', 'swing');
 
     $('body').toggleClass('bg-secondary');
     $('.slider__item').toggleClass('bg-secondary');
